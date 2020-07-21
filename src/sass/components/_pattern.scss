@@ -1,0 +1,47 @@
+.pattern {
+  position: absolute;
+  width: 35.4vw;
+  height: 70.7vw;
+  border-radius: 255px;
+  background-image: linear-gradient(
+    to bottom,
+    $color-primary-pink,
+    $color-primary-purple
+  );
+  z-index: -1;
+
+  @include respond(tablet) {
+    width: 55vw;
+    min-height: 600px;
+  }
+
+  @include respond(mobile) {
+    width: 136vw;
+    height: 271vw;
+    max-height: 1220px;
+  }
+
+  &--grey {
+    opacity: 0.03;
+  }
+
+  &--left {
+    top: 0;
+    left: 0;
+    transform: translate(-17.6%, -31.2%);
+
+    @include respond(mobile) {
+      transform: translate(-63.1%, -50%);
+    }
+  }
+
+  &--right {
+    bottom: 0;
+    right: 0;
+    transform: translate(36.3%, 33.1%);
+
+    @include respond(mobile) {
+      display: none;
+    }
+  }
+}

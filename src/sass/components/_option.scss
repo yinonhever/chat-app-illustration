@@ -1,0 +1,38 @@
+.option {
+  display: flex;
+  padding: 1.1rem 1.6rem 1rem 0.8rem;
+  width: 100%;
+  max-width: 16rem;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-pink,
+    $color-primary-purple
+  );
+
+  &__icon {
+    font-size: 1rem;
+    margin-right: 0.8rem;
+    color: $color-light-pink;
+  }
+
+  &__text {
+    font-size: 0.8rem;
+    line-height: 1.375;
+    flex: 1;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 0.917;
+  }
+}
+
+.left .option {
+  border-radius: 1rem 1rem 1rem 0.4rem;
+}
+
+.right .option {
+    border-radius: 1rem 1rem 0.4rem 0.4rem;
+}

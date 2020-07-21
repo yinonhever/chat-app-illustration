@@ -1,0 +1,17 @@
+.chat-side {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+
+  &.left {
+    align-items: flex-start;
+  }
+
+  &.right {
+    align-items: flex-end;
+  }
+
+  & > *:not(:last-child) {
+    margin-bottom: 0.8rem;
+  }
+}

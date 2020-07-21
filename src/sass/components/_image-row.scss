@@ -1,0 +1,14 @@
+.image-row {
+  display: flex;
+
+  &__image {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 0.5rem -0.5rem rgba($color-text-dark-purple, 0.05);
+
+    &:not(:last-child) {
+      margin-right: 0.8rem;
+    }
+  }
+}

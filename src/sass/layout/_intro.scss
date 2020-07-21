@@ -1,0 +1,23 @@
+.intro {
+  width: 31vw;
+
+  @include respond(tablet) {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 6.4rem;
+    text-align: center;
+  }
+
+  &__heading {
+    color: $color-text-dark-purple;
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &__text {
+    color: $color-text-dark-grey;
+    font-size: 1.6rem;
+    line-height: 1.75;
+  }
+}

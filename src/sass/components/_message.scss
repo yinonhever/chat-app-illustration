@@ -1,0 +1,20 @@
+.message {
+  padding: 0.6rem 0.8rem;
+  max-width: 12.8rem;
+  font-size: 0.8rem;
+  line-height: 1.375;
+}
+
+.left .message {
+  color: $color-text-light-purple;
+  background-color: #eee5f4;
+  border-radius: 1rem 1rem 1rem 0.4rem;
+}
+
+.right .message {
+  color: $color-text-grey-purple;
+  background-color: #fff;
+  box-shadow: 0 1rem 0.5rem -0.5rem rgba($color-text-dark-purple, 0.05);
+  border-radius: 1rem 1rem 0.4rem 1rem;
+}
+

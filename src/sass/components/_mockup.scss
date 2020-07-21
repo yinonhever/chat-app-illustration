@@ -1,0 +1,115 @@
+.mockup {
+  width: 24.7rem;
+  background-color: #fff;
+  border-radius: 3rem;
+  padding: 1.1rem 0.95rem;
+  box-shadow: 0 3rem 6rem -1rem rgba($color-text-dark-purple, 0.25);
+  position: relative;
+
+  @include respond(mobile) {
+      width: 100%;
+      max-width: 24.7rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border-radius: 0 0 1.4rem 1.4rem;
+    width: 52%;
+    height: 2.9rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__content {
+    border-radius: 2rem;
+    background-color: $color-light-grey;
+  }
+
+  &__header {
+    background-image: linear-gradient(
+      to left,
+      $color-primary-pink,
+      $color-primary-purple
+    );
+    color: #fff;
+    width: 100%;
+    padding: 3rem 1.6rem 1.2rem;
+    border-radius: 2rem 2rem 0.6rem 0.6rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-1 {
+    font-size: 1.3rem;
+  }
+
+  &__header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__heading {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+
+  &__sub-heading {
+    font-size: 0.8rem;
+    color: $color-text-pale-purple;
+  }
+
+  &__icon-2 {
+    font-size: 1rem;
+    margin-left: auto;
+  }
+
+  &__avatar {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 0 0.8rem;
+  }
+
+  &__chat {
+    padding: 1.1rem 0.75rem;
+  }
+
+  &__input {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 100px;
+    padding: 0.6rem 0.5rem 0.6rem 1.94rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__placeholder {
+    font-size: 0.9rem;
+    letter-spacing: -0.07px;
+    color: $color-text-light-grey;
+  }
+
+  &__button {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background-color: $color-text-dark-purple;
+    position: relative;
+  }
+
+  &__input-icon {
+    position: absolute;
+    left: 53%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.2rem;
+  }
+}

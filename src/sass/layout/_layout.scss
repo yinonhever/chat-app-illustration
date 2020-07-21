@@ -1,0 +1,13 @@
+.layout {
+  padding: 10.3vw 18vw 10.3vw 25vw;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  @include respond(tablet) {
+    padding: 6.4rem 3.2rem;
+    flex-direction: column;
+  }
+}
