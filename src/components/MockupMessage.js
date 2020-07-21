@@ -1,7 +1,7 @@
 import React from "react";
 
 const MockupMessage = props => (
-    <div className="message">
+    <div className="message chat-element">
         {props.children}
     </div>
 )
